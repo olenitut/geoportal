@@ -8,10 +8,11 @@
   padding: 23px 0;
   position: absolute;
   width: 100vw;
+  z-index: 1;
 }
 
 .icon {
-  filter: $color-primary-icon;
+  filter: $color-white-icon;
 }
 
 .logo {
@@ -26,7 +27,7 @@
   }
 
   &__text {
-    color: $color-primary;
+    color: white;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -57,7 +58,7 @@
       font-weight: 400;
       font-size: 13px;
       line-height: 17px;
-      color: #000000;
+      color: white;
     }
   }
 
@@ -79,7 +80,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration: none;
-    color: #000000;
+    color: white;
   }
 }
 

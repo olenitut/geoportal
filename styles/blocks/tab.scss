@@ -1,0 +1,9 @@
+.tab {
+  background-color: #fff;
+
+  &__container {
+    background-image: url("../../img/tab.png");
+    min-width: 100%;
+    min-height: 100px;
+  }
+}

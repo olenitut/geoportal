@@ -4,8 +4,13 @@
 
 body {
   margin: 0;
+  background-color: #ebebeb;
 }
 
 @import "./utils/variables.scss";
 @import "./blocks/header.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/section.scss";
+@import "./blocks/data.scss";
+@import "./blocks/about.scss";
+@import "./blocks/tab.scss";

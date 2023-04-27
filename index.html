@@ -4,7 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -159,9 +173,139 @@
         </div>
       </section>
       <section class="section tab">
-        <div class="tab__container"></div>
+        <div class="tab__container">
+          <div class="container d-flex justify-content-center mt-5">
+            <div>
+              <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item d-flex justify-content-center">
+                  <a href="#tab-1" class="nav-link active" data-toggle="pill"
+                    >Lorem Ipsum 1</a
+                  >
+                </li>
+                <li class="nav-item d-flex justify-content-center">
+                  <a href="#tab-2" class="nav-link" data-toggle="pill"
+                    >Lorem Ipsum 2</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div
+                  class="tab__box tab-pane show active fade justify-content-center px-5"
+                  id="tab-1"
+                >
+                  <h2 class="tab__title">Lorem Ipsum 1</h2>
+                  <div class="d-flex justify-content-center tab__content">
+                    <img src="./img/tabs-icon.svg" class="tab__icon" />
+                    <p class="tab__text">
+                      Lorem Ipsum - це текст-"риба", що використовується в
+                      друкарстві та дизайні. Lorem Ipsum є, фактично,
+                      стандартною "рибою" аж з XVI сторіччя, коли невідомий
+                      друкар взяв шрифтову гранку та склав на ній підбірку
+                      зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                      століть, але й прижилася в електронному верстуванні,
+                      залишаючись по суті незмінною. Вона популяризувалась в
+                      60-их роках минулого сторіччя завдяки виданню зразків
+                      шрифтів Letraset.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="tab__box tab-pane fade justify-content-center px-5"
+                  id="tab-2"
+                >
+                  <h2 class="tab__title">Lorem Ipsum 2</h2>
+                  <div class="d-flex justify-content-center tab__content">
+                    <img src="./img/tabs-icon.svg" class="tab__icon" />
+                    <p class="tab__text">
+                      Lorem Ipsum - це текст-"риба", що використовується в
+                      друкарстві та дизайні. Lorem Ipsum є, фактично,
+                      стандартною "рибою" аж з XVI сторіччя, коли невідомий
+                      друкар взяв шрифтову гранку та склав на ній підбірку
+                      зразків шрифтів. "Риба" не тільки успішно пережила п'ять
+                      століть, але й прижилася в електронному верстуванні,
+                      залишаючись по суті незмінною. Вона популяризувалась в
+                      60-их роках минулого сторіччя завдяки виданню зразків
+                      шрифтів Letraset.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <footer class="footer d-flex flex-column align-items-center">
+      <h2 class="footer__title">Зв’язатися з нами</h2>
+      <h3 class="footer__subtitle">У вас залишились питання? Напишіть нам.</h3>
+      <div class="footer__content d-flex justify-content-between">
+        <div class="footer__contacts d-flex flex-column">
+          <div class="footer__row d-flex">
+            <img class="footer__icon" src="./img/icons/location-icon.svg" />
+            <p class="footer__contact">Київ</p>
+          </div>
+          <div class="footer__row d-flex">
+            <img class="footer__icon" src="./img/icons/clock-icon.svg" />
+            <p class="footer__contact">Пн-Пт 9:00-18:00</p>
+          </div>
+          <div class="footer__row d-flex">
+            <img class="footer__icon" src="./img/icons/phone-icon.svg" />
+            <p class="footer__contact">+044 222-33-44</p>
+          </div>
+          <div class="footer__row d-flex">
+            <img class="footer__icon" src="./img/icons/letter-icon.svg" />
+            <p class="footer__contact">order@test.ua</p>
+          </div>
+        </div>
+        <div class="footer__form-box">
+          <form class="footer__form d-flex flex-column justify-content-start">
+            <div class="d-flex justify-content-between">
+              <label for="name"
+                ><p class="footer__label">Им`я</p>
+                <input
+                  class="footer__input"
+                  type="text"
+                  id="name"
+                  placeholder="Іван"
+                  required
+              /></label>
+              <label for="surname"
+                ><p class="footer__label">Прізвище</p>
+                <input
+                  class="footer__input"
+                  type="text"
+                  id="surname"
+                  placeholder="Іванов"
+                  required
+              /></label>
+            </div>
+            <label for="phone"
+              ><p class="footer__label">Контактний телефон</p>
+              <input
+                class="footer__input"
+                type="tel"
+                id="phone"
+                placeholder="380111111111"
+                required
+            /></label>
+            <label for="message"
+              ><p class="footer__label">Повідомлення</p>
+              <textarea
+                type="tel"
+                id="message"
+                placeholder="Ваше повідомлення"
+                class="footer__input footer__textarea"
+              ></textarea>
+            </label>
+            <button class="footer__button" type="submit">Надіслати</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <div class="copy d-flex justify-content-between">
+      <p>2020 © Всі права захищені.</p>
+      <p>Розроблено: Geoportal</p>
+    </div>
     <script
       type="text/javascript"
       src="http://code.jquery.com/jquery-1.11.0.min.js"

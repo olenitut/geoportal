@@ -123,13 +123,13 @@ body {
 
 .prev {
   left: 75%;
-  bottom: 13%;
+  bottom: 11%;
   background: rgba(0, 0, 0, 0.2);
 }
 
 .next {
   left: calc(75% + 67px);
-  bottom: 13%;
+  bottom: 11%;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -139,9 +139,8 @@ body {
   list-style-type: none;
   gap: 40px;
   position: absolute;
-  bottom: calc(13% + 33px);
-  transform: translateY(50%);
-  left: 10%;
+  bottom: 11%;
+  left: 8%;
 }
 .slider .slick-dots button {
   display: block;
@@ -155,6 +154,51 @@ body {
 }
 .slider .slick-dots li.slick-active button {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.section-hero {
+  position: relative;
+}
+.section-hero__box {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  max-width: 750px;
+}
+.section-hero__title {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.section-hero__subtitle {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 80px;
+}
+.section-hero__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #005fa3;
+  height: 55px;
+  width: 168px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

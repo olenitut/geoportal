@@ -1,6 +1,14 @@
 .section {
   padding: 140px 15vw;
 
+  @include onTablet {
+    padding: 80px 5vw;
+  }
+
+  @include onMobile {
+    padding: 20px 1vw;
+  }
+
   &__heading {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;

@@ -1,6 +1,10 @@
 .copy {
   padding: 20px 15vw;
   background-color: white;
+
+  @include onMobile {
+    padding: 5px 5vw;
+  }
 }
 
 .copy p {

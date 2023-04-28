@@ -8,8 +8,18 @@
     min-height: 100px;
   }
 
+  &__icon {
+    @include onTablet {
+      display: none;
+    }
+  }
+
   &__box {
     margin: 40px 50px;
+
+    @include onTablet {
+      margin: 10px;
+    }
   }
 
   &__title {
@@ -27,6 +37,10 @@
 
   &__content {
     gap: 130px;
+
+    @include onTablet {
+      flex-direction: column;
+    }
   }
 
   &__text {
@@ -36,6 +50,10 @@
     font-size: 17px;
     line-height: 160%;
     color: #ffffff;
+
+    @include onTablet {
+      font-size: 14px;
+    }
   }
 }
 

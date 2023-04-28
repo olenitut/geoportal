@@ -4,6 +4,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 130px;
 
+  @include onTablet {
+    grid-template-columns: 1fr;
+  }
+
   &__text {
     margin: 0;
     font-family: "Lato", sans-serif;
@@ -26,6 +30,10 @@
     align-items: center;
     gap: 14px;
     background-color: #ebebeb;
+
+    @include onTablet {
+      gap: 8px;
+    }
   }
 
   &__img {
@@ -42,6 +50,10 @@
     text-transform: uppercase;
 
     color: #000000;
+
+    @include onTablet {
+      font-size: 40px;
+    }
   }
 
   &__description {
@@ -51,6 +63,10 @@
     font-size: 14px;
     line-height: 18px;
     color: #000000;
+
+    @include onTablet {
+      font-size: 12px;
+    }
   }
 
   &__data-box--primary {

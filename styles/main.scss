@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -8,6 +9,7 @@ body {
 }
 
 @import "./utils/variables.scss";
+@import "./utils/mixins.scss";
 @import "./blocks/header.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/section.scss";

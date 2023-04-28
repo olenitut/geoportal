@@ -9,6 +9,7 @@
   &__item {
     position: relative;
     flex-basis: calc(33.33% - 30px);
+    // min-width: 100%;
     margin: 15px;
     padding-top: 15%;
     box-sizing: border-box;
@@ -16,6 +17,16 @@
     text-align: center;
     padding-bottom: 20px;
     background-image: url("../../img/data.png");
+
+    @include onTablet {
+      flex-basis: calc(50% - 20px);
+      margin: 10px;
+    }
+
+    @include onMobile {
+      min-width: calc(50% - 10px);
+      margin: 5px;
+    }
 
     &:hover:after {
       background-color: rgba(0, 95, 163, 0.65);
@@ -38,5 +49,9 @@
     text-align: center;
 
     color: #ffffff;
+
+    @include onTablet {
+      font-size: 18px;
+    }
   }
 }

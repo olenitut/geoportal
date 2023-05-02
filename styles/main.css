@@ -90,26 +90,33 @@ body {
 }
 
 /* STICKY NAVIGATION */
-.sticky .header {
+.header.is-sticky {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  animation: slideDown 0.35s ease-out;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.97);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
-.sticky .icon {
-  filter: invert(19%) sepia(94%) saturate(2467%) hue-rotate(190deg) brightness(95%) contrast(101%);
-}
-
-.sticky .logo__text,
-.sticky .main-nav__data-link,
-.sticky .main-nav__link {
+.header.is-sticky .logo__text,
+.header.is-sticky .main-nav__data-link,
+.header.is-sticky .main-nav__link {
   color: #005fa3;
 }
 
+.header.is-sticky .icon {
+  filter: invert(19%) sepia(94%) saturate(2467%) hue-rotate(190deg) brightness(95%) contrast(101%);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .slider {
   height: 100vh;
   z-index: 0;

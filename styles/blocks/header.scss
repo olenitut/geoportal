@@ -86,22 +86,30 @@
 }
 
 /* STICKY NAVIGATION */
-.sticky .header {
+
+.header.is-sticky {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  animation: slideDown 0.35s ease-out;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.97);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
+.header.is-sticky .logo__text,
+.header.is-sticky .main-nav__data-link,
+.header.is-sticky .main-nav__link {
+  color: $color-primary;
+}
 
-.sticky .icon {
+.header.is-sticky .icon {
   filter: $color-primary-icon;
 }
 
-.sticky .logo__text,
-.sticky .main-nav__data-link,
-.sticky .main-nav__link {
-  color: $color-primary;
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

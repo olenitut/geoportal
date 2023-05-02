@@ -9,25 +9,13 @@ $(function () {
   });
 });
 
-const sectionHeroEl = document.querySelector(".section-hero");
-
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-
-    if (ent.isIntersecting === false) {
-      document.body.classList.add("sticky");
-    }
-
-    if (ent.isIntersecting === true) {
-      document.body.classList.remove("sticky");
-    }
-  },
-  {
-    // In the viewport
-    root: null,
-    threshold: 0,
-    rootMargin: "-80px",
+const header = document.querySelector(".header");
+const toggleClass = "is-sticky";
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > 600) {
+    header.classList.add(toggleClass);
+  } else {
+    header.classList.remove(toggleClass);
   }
-);
-obs.observe(sectionHeroEl);
+});

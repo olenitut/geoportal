@@ -5,7 +5,6 @@
   align-items: center;
 
   height: 100px;
-  padding: 23px 10vw;
   position: absolute;
   width: 100%;
   z-index: 1;
@@ -19,7 +18,7 @@
   display: flex;
   text-decoration: none;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 11px;
 
   &__icon {
@@ -27,6 +26,7 @@
   }
 
   &__text {
+    margin: 0;
     color: white;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
@@ -36,9 +36,6 @@
 }
 
 .main-nav {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
   gap: 13px;
 
   &__data {

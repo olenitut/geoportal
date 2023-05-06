@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- bootstrap -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -30,54 +35,82 @@
     <title>Geoportal</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header py-4">
       <div class="container d-flex">
-        <a href="#" class="logo navbar-brand">
-          <img
-            class="icon logo__icon"
-            alt="Geoportal logo"
-            src="img/logo.svg"
-          />
-          <p class="logo__text font-weight-bold">Geoportal</p>
-        </a>
-
-        <nav class="main-nav ml-auto navbar navbar-expand-sm flex-column">
-          <ul class="main-nav__data list-unstyled">
-            <li>
-              <a class="main-nav__data-link" href="#how">
-                <img src="img/icons/phone-icon.svg" alt="Phone" class="icon" />
-                <span>8 (066) 222-33-44</span>
-              </a>
-            </li>
-            <li>
-              <a class="main-nav__data-link" href="#how">
-                <img src="img/icons/clock-icon.svg" alt="Clock" class="icon" />
-                <span>Пн-Пт 9:00-18:00</span>
-              </a>
-            </li>
-            <li>
-              <a class="main-nav__data-link" href="#how">
-                <img src="img/icons/letter-icon.svg" alt="Email" class="icon" />
-                <span>order@test.ua</span>
-              </a>
-            </li>
-            <li>
-              <a class="main-nav__data-link" href="#how">
-                <img
-                  src="img/icons/location-icon.svg"
-                  alt="Location"
-                  class="icon"
-                />
-                <span>Київ</span>
-              </a>
-            </li>
-          </ul>
-          <ul class="main-nav__list list-unstyled">
-            <li><a class="main-nav__link" href="#">головна</a></li>
-            <li><a class="main-nav__link" href="#data">послуги</a></li>
-            <li><a class="main-nav__link" href="#about">про компанію</a></li>
-            <li><a class="main-nav__link" href="#footer">контакти</a></li>
-          </ul>
+        <nav class="main-nav navbar navbar-expand-lg p-0">
+          <div class="container p-0">
+            <a href="#" class="logo navbar-brand">
+              <img
+                class="icon logo__icon"
+                alt="Geoportal logo"
+                src="img/logo.svg"
+              />
+              <p class="logo__text font-weight-bold">Geoportal</p>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-label="Toggle navigation"
+            >
+              <img class="icon" alt="menu" src="img/icons/icon-menu.svg" />
+            </button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <div class="ml-auto d-flex flex-column">
+                <ul class="main-nav__data list-unstyled mb-3 d-lg-flex">
+                  <li>
+                    <a class="main-nav__data-link" href="#how">
+                      <img
+                        src="img/icons/phone-icon.svg"
+                        alt="Phone"
+                        class="icon"
+                      />
+                      <span>8 (066) 222-33-44</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="main-nav__data-link" href="#how">
+                      <img
+                        src="img/icons/clock-icon.svg"
+                        alt="Clock"
+                        class="icon"
+                      />
+                      <span>Пн-Пт 9:00-18:00</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="main-nav__data-link" href="#how">
+                      <img
+                        src="img/icons/letter-icon.svg"
+                        alt="Email"
+                        class="icon"
+                      />
+                      <span>order@test.ua</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="main-nav__data-link" href="#how">
+                      <img
+                        src="img/icons/location-icon.svg"
+                        alt="Location"
+                        class="icon"
+                      />
+                      <span>Київ</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="main-nav__list list-unstyled flex-lg-row">
+                  <li><a class="main-nav__link" href="#">головна</a></li>
+                  <li><a class="main-nav__link" href="#data">послуги</a></li>
+                  <li>
+                    <a class="main-nav__link" href="#about">про компанію</a>
+                  </li>
+                  <li><a class="main-nav__link" href="#footer">контакти</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
     </header>

@@ -20,10 +20,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
-    gap: 30px;
+    gap: 20px;
   }
 
   &__data-box {
+    max-width: 100%;
+    aspect-ratio: 1/1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +39,10 @@
 
   &__img {
     max-height: 90px;
+
+    @media (max-width: 425px) {
+      max-height: 50px;
+    }
   }
 
   &__number {

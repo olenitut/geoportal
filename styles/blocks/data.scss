@@ -1,33 +1,22 @@
 .data {
   &__box {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 60px;
+    padding-top: 60px;
   }
 
   &__item {
+    aspect-ratio: 1/1;
     position: relative;
-    flex-basis: calc(33.33% - 30px);
-    margin: 15px;
-    padding-top: 15%;
     box-sizing: border-box;
-    background-color: #fff;
-    text-align: center;
-    padding-bottom: 20px;
+    padding: 0;
+    margin-bottom: 20px;
     background-image: url("../../img/data.png");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 
-    @include onTablet {
-      flex-basis: calc(50% - 20px);
-      margin: 10px;
-    }
-
-    @include onMobile {
-      min-width: calc(50% - 10px);
-      margin: 5px;
-    }
-
-    &:hover:after {
+    &:hover::after {
       background-color: rgba(0, 95, 163, 0.65);
       content: "";
       height: 100%;

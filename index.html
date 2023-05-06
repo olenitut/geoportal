@@ -140,31 +140,33 @@
           </div>
         </div>
       </section>
-      <section class="section data" id="data">
-        <h3 class="section__subheading">Набори даних</h3>
-        <h2 class="section__heading">Відкриті дані</h2>
-        <div class="data__box">
-          <article class="data__item">
-            <p class="data__paragraph">Агропромисловий розвиток</p>
-          </article>
-          <article class="data__item">
-            <p class="data__paragraph">Культура</p>
-          </article>
-          <article class="data__item">
-            <p class="data__paragraph">Туризм</p>
-          </article>
-          <article class="data__item">
-            <p class="data__paragraph">Спорт та фізична культура</p>
-          </article>
-          <article class="data__item">
-            <p class="data__paragraph">Охорона здоров’я</p>
-          </article>
-          <article class="data__item">
-            <p class="data__paragraph">Екологія</p>
-          </article>
-        </div>
-      </section>
-      <section class="section about" id="about">
+      <div class="grey">
+        <section class="data section container" id="data">
+          <h3 class="section__subheading">Набори даних</h3>
+          <h2 class="section__heading">Відкриті дані</h2>
+          <div class="data__box">
+            <article class="data__item">
+              <p class="data__paragraph">Агропромисловий розвиток</p>
+            </article>
+            <article class="data__item">
+              <p class="data__paragraph">Культура</p>
+            </article>
+            <article class="data__item">
+              <p class="data__paragraph">Туризм</p>
+            </article>
+            <article class="data__item">
+              <p class="data__paragraph">Спорт та фізична культура</p>
+            </article>
+            <article class="data__item">
+              <p class="data__paragraph">Охорона здоров’я</p>
+            </article>
+            <article class="data__item">
+              <p class="data__paragraph">Екологія</p>
+            </article>
+          </div>
+        </section>
+      </div>
+      <section class="section about container" id="about">
         <div class="about__box--text">
           <h3 class="section__subheading">Про нас</h3>
           <h2 class="section__heading section__heading">
@@ -211,7 +213,7 @@
           </div>
         </div>
       </section>
-      <section class="section tab">
+      <section class="section tab container">
         <div class="tab__container">
           <div class="container d-flex justify-content-center mt-5">
             <div>
@@ -274,78 +276,80 @@
         </div>
       </section>
     </main>
-    <footer class="footer d-flex flex-column align-items-center" id="footer">
-      <h2 class="footer__title">Зв’язатися з нами</h2>
-      <h3 class="footer__subtitle text-center">
-        У вас залишились питання? Напишіть нам.
-      </h3>
-      <div class="footer__content d-flex justify-content-between">
-        <div class="footer__contacts d-flex flex-column">
-          <div class="footer__row d-flex">
-            <img class="footer__icon" src="./img/icons/location-icon.svg" />
-            <p class="footer__contact">Київ</p>
-          </div>
-          <div class="footer__row d-flex">
-            <img class="footer__icon" src="./img/icons/clock-icon.svg" />
-            <p class="footer__contact">Пн-Пт 9:00-18:00</p>
-          </div>
-          <div class="footer__row d-flex">
-            <img class="footer__icon" src="./img/icons/phone-icon.svg" />
-            <p class="footer__contact">+044 222-33-44</p>
-          </div>
-          <div class="footer__row d-flex">
-            <img class="footer__icon" src="./img/icons/letter-icon.svg" />
-            <p class="footer__contact">order@test.ua</p>
-          </div>
-        </div>
-        <div class="footer__form-box">
-          <form class="footer__form d-flex flex-column justify-content-start">
-            <div class="d-flex justify-content-between">
-              <label for="name"
-                ><p class="footer__label">Им`я</p>
-                <input
-                  class="footer__input"
-                  type="text"
-                  id="name"
-                  placeholder="Іван"
-                  required
-              /></label>
-              <label for="surname"
-                ><p class="footer__label">Прізвище</p>
-                <input
-                  class="footer__input"
-                  type="text"
-                  id="surname"
-                  placeholder="Іванов"
-                  required
-              /></label>
+    <footer class="footer section" id="footer">
+      <div class="container d-flex flex-column align-items-center">
+        <h2 class="footer__title">Зв’язатися з нами</h2>
+        <h3 class="footer__subtitle text-center">
+          У вас залишились питання? Напишіть нам.
+        </h3>
+        <div class="footer__content d-flex justify-content-between">
+          <div class="footer__contacts d-flex flex-column">
+            <div class="footer__row d-flex">
+              <img class="footer__icon" src="./img/icons/location-icon.svg" />
+              <p class="footer__contact">Київ</p>
             </div>
-            <label for="phone"
-              ><p class="footer__label">Контактний телефон</p>
-              <input
-                class="footer__input"
-                type="tel"
-                id="phone"
-                placeholder="380111111111"
-                required
-            /></label>
-            <label for="message"
-              ><p class="footer__label">Повідомлення</p>
-              <textarea
-                type="tel"
-                id="message"
-                placeholder="Ваше повідомлення"
-                class="footer__input footer__textarea"
-              ></textarea>
-            </label>
-            <button class="footer__button text-center" type="submit">
-              Надіслати
-            </button>
-          </form>
+            <div class="footer__row d-flex">
+              <img class="footer__icon" src="./img/icons/clock-icon.svg" />
+              <p class="footer__contact">Пн-Пт 9:00-18:00</p>
+            </div>
+            <div class="footer__row d-flex">
+              <img class="footer__icon" src="./img/icons/phone-icon.svg" />
+              <p class="footer__contact">+044 222-33-44</p>
+            </div>
+            <div class="footer__row d-flex">
+              <img class="footer__icon" src="./img/icons/letter-icon.svg" />
+              <p class="footer__contact">order@test.ua</p>
+            </div>
+          </div>
+          <div class="footer__form-box">
+            <form class="footer__form d-flex flex-column justify-content-start">
+              <div class="d-flex justify-content-between">
+                <label for="name"
+                  ><p class="footer__label">Им`я</p>
+                  <input
+                    class="footer__input"
+                    type="text"
+                    id="name"
+                    placeholder="Іван"
+                    required
+                /></label>
+                <label for="surname"
+                  ><p class="footer__label">Прізвище</p>
+                  <input
+                    class="footer__input"
+                    type="text"
+                    id="surname"
+                    placeholder="Іванов"
+                    required
+                /></label>
+              </div>
+              <label for="phone"
+                ><p class="footer__label">Контактний телефон</p>
+                <input
+                  class="footer__input"
+                  type="tel"
+                  id="phone"
+                  placeholder="380111111111"
+                  required
+              /></label>
+              <label for="message"
+                ><p class="footer__label">Повідомлення</p>
+                <textarea
+                  type="tel"
+                  id="message"
+                  placeholder="Ваше повідомлення"
+                  class="footer__input footer__textarea"
+                ></textarea>
+              </label>
+              <button class="footer__button text-center" type="submit">
+                Надіслати
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
-    <div class="copy d-flex justify-content-between">
+    <div class="copy container d-flex justify-content-between">
       <p class="m-0">2020 © Всі права захищені.</p>
       <p class="m-0">Розроблено: Geoportal</p>
     </div>

@@ -1,10 +1,6 @@
 .footer {
   background-image: url("../../img/footer.png");
-  padding: 100px 20vw;
-
-  @include onTablet {
-    padding: 80px 10vw;
-  }
+  background-size: cover;
 
   &__title {
     font-family: "Open Sans", sans-serif;
